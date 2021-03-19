@@ -10,7 +10,7 @@ namespace parser.Core.Habra
         public string[] Parse(IHtmlDocument doc)
         {
             List<string> res = new List<string>();
-            var items = doc.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName == "post_title_link");
+            var items = doc.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName == "post__title_link");
             
             foreach(var item in items)
             {
